@@ -5,16 +5,16 @@
      let valorTotal=0;
      for(let i=0; i<produtos.length; i++){
          valorTotal += multiplicaValor(produtos[i].quantidade, produtos[i].valor)
-         exibirT
-        exibirTela('${produtos[i].id} -${produtos[i].nome} -${prdutos[i].quantidade}') 
+         
+        exibirTela(`${produtos[i].id} - ${produtos[i].nome} - ${produtos[i].quantidade}`) 
      }
-     exibeTela('---> Total R$: ' + valorTotal)
+     exibirTela('---> Total R$: ' + valorTotal)
 }
 
 exports.principal = () => {
-  exibeTela('----------- Top Acessórios de Celular ----------')
+  exibirTela('----------- Top Acessórios de Celular ----------')
 
-  exibeTela('----- Lista Produtos - '  )
+  exibirTela('----- Lista Produtos - '  )
   
   listarProdutos()
 }
